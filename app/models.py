@@ -41,9 +41,18 @@ class Analytics(Base):
     __tablename__ = "Analytics"
     analytics_id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
     user_id = Column(String(36), ForeignKey("User.user_id"))
-    total_scanned = Column(Integer)
-    last_scanned_date = Column(TIMESTAMP)
-    activity_summary = Column(JSON)
+    
+    # i scanned
+    total_i_scanned = Column(Integer)
+    successful_i_scanned = Column(Integer)
+    failed_i_scanned = Column(Integer)
+    last_time_i_scanned = Column(TIMESTAMP)
+    
+    # who scanned me
+    total_whos_scanned_me = Column(Integer)
+    successful_whos_scanned_me = Column(Integer)
+    failed_whos_scanned_me = Column(Integer)
+    last_time_whos_scanned_me = Column(TIMESTAMP)
 
 class PasswordReset(Base):
     __tablename__ = "Password_Reset"

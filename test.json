@@ -1,0 +1,54 @@
+{
+    "who_scanned_me": [
+        {
+            "time_scanned": "2023-01-10T19:00:00",
+            "profile": {
+                "name": "Bob",
+                "bio": "iam a guy",
+                "job_title": "Graphic Designer",
+                "company": "Design Studio",
+                "profile_picture": "https://www.designstudio.com"
+            },
+            "contacts": [
+                {
+                    "notes": "Personal phone number",
+                    "contact_type": "Phone",
+                    "contact_value": "444-555-6666"
+                },
+                {
+                    "notes": "LinkedIn profile",
+                    "contact_type": "LinkedIn",
+                    "contact_value": "linkedin.com/in/bobbrown"
+                },
+                {
+                    "notes": "Work email",
+                    "contact_type": "Email",
+                    "contact_value": "bob.brown@designstudio.com"
+                }
+            ]
+        }
+    ],
+    "who_i_scanned": [
+        {
+            "time_scanned": "2023-01-01T10:00:00",
+            "contacts": [
+                {
+                    "notes": "Work email",
+                    "contact_type": "Email",
+                    "contact_value": "jane.smith@businessinc.com"
+                },
+                {
+                    "notes": "Personal phone number",
+                    "contact_type": "Phone",
+                    "contact_value": "555-123-4567"
+                },
+                {
+                    "notes": "LinkedIn profile",
+                    "contact_type": "LinkedIn",
+                    "contact_value": "linkedin.com/in/janesmith"
+                    
+                }
+            ]
+        }
+    ]
+}

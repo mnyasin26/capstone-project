@@ -4,12 +4,12 @@ from datetime import datetime, timedelta
 from jose import jwt
 from typing import Optional
 from sqlalchemy.orm import Session
-from models import TokenBlacklist  # Assuming you have a TokenBlacklist model defined
+from app.models import TokenBlacklist  # Assuming you have a TokenBlacklist model defined
 
 # Create a CryptContext object
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
-SECRET_KEY = "your_secret_key"  # Use a secure secret key
+SECRET_KEY = "admin1234"  # Use a secure secret key
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
